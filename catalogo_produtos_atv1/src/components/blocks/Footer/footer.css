@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+
+    background-color: white;
+    padding: 40px;
+    justify-content: space-around;
+    margin-top: 1.6%;
+}
+
+.footer_alinhar{
+    display: flex;
+    gap: 60px;
+}
+
+li {
+    list-style: none;
+}
+
+.titulo_li {
+    font-weight: bold;
+}
+
+.espacamento_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.email_input {
+    padding: 10px;
+    background-color: white;
+}
+
+.email_button {
+    padding: 12px;
+    background-color: #272727;
+    border: none;
+    outline: none;
+}
