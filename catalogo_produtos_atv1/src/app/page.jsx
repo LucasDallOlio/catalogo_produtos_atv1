@@ -10,12 +10,12 @@ export default async function Home() {
   return (<>
     <div className="bgcolor">
       <div className="container pb-5 py-5 ">
-        <div className="d-flex gap-5 flex-wrap align-items-center justify-content-center">
+        <div className="d-flex gap-5 flex-wrap align-items-stretch justify-content-center">
           {produtos.map((produto, index) => {
             return (
               <div key={produto.id} style={{ width: "18rem" }}>
                 <Link href={"/produtos/" + produto.id} className="text-decoration-none">
-                  <div className="card">
+                  <div className="card h-100">
                     <div
                       className="bg-image hover-overlay ripple"
                       data-mdb-ripple-color="light"
@@ -25,7 +25,7 @@ export default async function Home() {
                         className=""
                       />
                     </div>
-                    <div className="card-body">
+                    <div className="card-body d-flex flex-column align-items-stretch">
                       <h5 className="card-title font-weight-bold">
                         {produto.title}
                       </h5>
@@ -47,7 +47,7 @@ export default async function Home() {
                           <p className="text-muted">{produto.rating}</p>
                         </li>
                       </ul>
-                      <p className="mb-2">R${produto.price} • {produto.category}, {produto.brand}</p>
+                      <p className="mb-2" style={{ margin: "auto", marginLeft: "0" }}>R${produto.price} • {produto.category}, {produto.brand}</p>
                     </div>
                   </div>
                 </Link>
